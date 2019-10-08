@@ -33,10 +33,12 @@ client.on("ready", () => {
 
 client.on("message", async message => {
     const prefix = "V"
+    
+    msg = message.content.toLowerCase();
 
     if (message.author.bot) return;
     if (!message.guild) return;
-    if (message.content.startsWith("prefix".toLowerCase())) return;
+    if (msg.startsWith(prefix)) return;
     if (!message.member) message.member = await message.guild.fetchMember(message);
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
