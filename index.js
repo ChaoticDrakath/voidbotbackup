@@ -23,7 +23,7 @@ client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
     client.user.setPresence({
-        status: "online",
+        status: "invisible",
         game: {
             name: "me getting developed",
             type: "STREAMING"
