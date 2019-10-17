@@ -31,6 +31,11 @@ client.on("ready", () => {
     }); 
 });
 
+client.on("guildCreate", guild => {
+   guild.owner.send('Thanks for adding me to your  server!\nYou can use `Vhelp` to discover commands.')
+   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+});
+
 client.on("message", async message => {
     const prefix = "V"
 
