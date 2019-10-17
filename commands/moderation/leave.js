@@ -12,5 +12,6 @@ module.exports = {
     if(!message.guild.id.size < 1) return message.reply("You must supply a Guild ID");
     if (message.author.id !== "471988330335174667") return;
     message.guild.leave();
+    console.log(`Left guild: ${guild.name} (id: ${guild.id})`)
 }
 }
