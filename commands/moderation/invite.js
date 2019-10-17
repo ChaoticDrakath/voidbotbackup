@@ -9,7 +9,7 @@ module.exports = {
         message.delete();
         
         if(message.member.hasPermission("MANAGE_MESSAGES")) {
-        message.member.send("https://discordapp.com/api/oauth2/authorize?client_id=603517038375206923&permissions=8&scope=bot");
-    }else message.channel.send("Use this to invite me:\nYou don't have required permissions to access this command!");
+        message.member.send("Use this to invite me:\nhttps://discordapp.com/api/oauth2/authorize?client_id=603517038375206923&permissions=8&scope=bot");
+    }else message.channel.send("You don't have required permissions to access this command!");
 }
 }
