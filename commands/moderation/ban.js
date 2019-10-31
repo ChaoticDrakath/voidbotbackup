@@ -7,6 +7,7 @@ module.exports = {
     category: "moderation",
     description: "bans the member",
     usage: "[id | mention] [reason]",
+    guildOnly: true,
     run: async (client, message, args) => {
         const logChannel = message.guild.channels.find(c => c.name === "logs") || message.channel;
 
