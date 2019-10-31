@@ -6,6 +6,7 @@ module.exports = {
     aliases: ["c"],
     description: "makes bot leave guild",
     usage: "[guildid]",
+    guildOnly: true,
     run: (client, message, args) => {
         message.delete();
         
