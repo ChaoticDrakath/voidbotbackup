@@ -5,6 +5,7 @@ module.exports = {
     category: "moderation",
     description: "direct messages your input to all server members via the bot",
     usage: "[input]",
+    guildOnly: true,
     run: (client, message, args) => {
         
         if(message.member.hasPermission(["ADMINISTRATOR"])){
