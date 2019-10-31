@@ -8,6 +8,8 @@ module.exports = {
     category: "moderation",
     description: "Check mentioned user warnings.",
     usage: "[mention | id]",
+    guildOnly: true,
+
     run: (client, message, args) => {
         message.delete();
        
