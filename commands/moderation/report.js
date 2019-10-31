@@ -6,6 +6,7 @@ module.exports = {
     category: "moderation",
     description: "Reports a member",
     usage: "[mention | id] [reason]",
+    guildOnly: true,
     run: async (client, message, args) => {
         if (message.deletable) message.delete();
 
