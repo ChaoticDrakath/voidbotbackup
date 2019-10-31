@@ -9,6 +9,8 @@ module.exports = {
     aliases: ["w"],
     description: "Warns the mentioned user!",
     usage: "[mention | id]",
+    guildOnly: true,
+
     run: async (client, message, args) => {
         message.delete();
         
