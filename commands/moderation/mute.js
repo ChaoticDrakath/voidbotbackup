@@ -6,6 +6,7 @@ module.exports = {
     category: "moderation",
     description: "Mutes the member",
     usage: "[id | mention] [reason]",
+    guildOnly: true,
     run: async (client, message, args) => {
 
   if (!message.member.hasPermission("KICK_MEMBERS", "BAN_MEMBERS")) {
