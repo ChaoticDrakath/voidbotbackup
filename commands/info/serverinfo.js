@@ -6,6 +6,7 @@ module.exports = {
     category: "info",
     description: "Sends server information.",
     usage: "[command | alias]",
+    guildOnly: true,
     run: async (client, message, args) => {
 
            
