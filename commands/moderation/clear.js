@@ -6,6 +6,7 @@ module.exports = {
     aliases: ["c"],
     description: "clears chat (max messages 99)",
     usage: "[amount]",
+    guildOnly: true,
     run: (client, message, args) => {
         message.delete();
         
