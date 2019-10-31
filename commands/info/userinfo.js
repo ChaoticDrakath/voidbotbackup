@@ -8,6 +8,7 @@ module.exports = {
     category: "info",
     description: "Returns user information",
     usage: "[username | id | mention]",
+    guildOnly: true,
     run: (client, message, args) => {
         const member = getMember(message, args.join(" "));
 
