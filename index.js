@@ -25,8 +25,8 @@ client.on("ready", () => {
     client.user.setPresence({
         status: "online",
         game: {
-            name: "Commands (Vhelp)",
-            type: "STREAMING"
+            name: "Commands (Ghelp)",
+            type: "DO NOT DISTURB"
         }
     }); 
 });
@@ -37,7 +37,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("message", async message => {
-    const prefix = "V"
+    const prefix = "G"
     
 
     if (message.author.bot) return;
