@@ -23,7 +23,7 @@ module.exports = {
 
 function getAll(client, message) {
     const embed = new RichEmbed()
-        .setColor("PURPLE")
+        .setColor("RED")
         
     // Map all the commands
     // with the specific category
@@ -64,5 +64,5 @@ function getCMD(client, message, input) {
         embed.setFooter(`Syntax: [] = required, <> = optional`);
     }
 
-    return message.channel.send(embed.setColor("PURPLE").setDescription(info));
+    return message.channel.send(embed.setColor("RED").setDescription(info));
 }
